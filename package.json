@@ -1,6 +1,6 @@
 {
   "name": "rsbuild-plugin-css-optimizer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/aliezzahn/rsbuild-plugin-css-optimizer",
   "license": "MIT",
   "type": "module",
