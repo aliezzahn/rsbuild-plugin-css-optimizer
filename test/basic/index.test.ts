@@ -11,15 +11,17 @@ test('should render page as expected', async ({ page }) => {
   const rsbuild = await createRsbuild({
     cwd: __dirname,
     rsbuildConfig: {
-      plugins: [pluginCssMinimizer({
-      minifier: 'lightningcss',
-      lightningCssOptions: {
-        minimizerOptions: {
-          targets: ['> 0.25%', 'not dead'],
-          drafts: { nesting: true },
-        },
-      },
-    }),],
+      plugins: [
+        pluginCssMinimizer({
+          minifier: 'lightningcss',
+          lightningCssOptions: {
+            minimizerOptions: {
+              targets: ['> 0.25%', 'not dead'],
+              drafts: { nesting: true },
+            },
+          },
+        }),
+      ],
       server: {
         port: getRandomPort(),
       },
@@ -38,15 +40,17 @@ test('should build succeed', async ({ page }) => {
   const rsbuild = await createRsbuild({
     cwd: __dirname,
     rsbuildConfig: {
-      plugins: [pluginCssMinimizer({
-      minifier: 'lightningcss',
-      lightningCssOptions: {
-        minimizerOptions: {
-          targets: ['> 0.25%', 'not dead'],
-          drafts: { nesting: true },
-        },
-      },
-    }),],
+      plugins: [
+        pluginCssMinimizer({
+          minifier: 'lightningcss',
+          lightningCssOptions: {
+            minimizerOptions: {
+              targets: ['> 0.25%', 'not dead'],
+              drafts: { nesting: true },
+            },
+          },
+        }),
+      ],
     },
   });
 
