@@ -1,3 +1,5 @@
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/web-infra-dev/awesome-rspack)
+
 # rsbuild-plugin-css-optimizer
 
 An Rsbuild plugin to customize CSS minification, allowing you to choose between [cssnano](https://github.com/cssnano/cssnano) (JavaScript-based) or [Lightning CSS](https://lightningcss.dev) (Rust-based) for high-performance CSS compression.
