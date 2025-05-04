@@ -30,6 +30,10 @@ Install the plugin and its dependency:
 npm add rsbuild-plugin-css-optimizer -D
 ```
 
+```bash
+bun add -d rsbuild-plugin-css-optimizer 
+```
+
 ## Usage
 
 Add the `pluginCssMinimizer` to your Rsbuild configuration in `rsbuild.config.ts`. The plugin enables CSS minification in production builds when `output.minify.css` is `true`.
