@@ -1,6 +1,16 @@
-import { defineConfig } from '@rsbuild/core';
-import { pluginExample } from '../src';
+import { defineConfig } from "@rsbuild/core";
+import { pluginCssMinimizer } from "../src";
 
 export default defineConfig({
-  plugins: [pluginExample()],
+  plugins: [
+    pluginCssMinimizer({
+      minifier: "lightningcss",
+      lightningCssOptions: {
+        minimizerOptions: {
+          targets: ["> 0.25%", "not dead"],
+          drafts: { nesting: true },
+        },
+      },
+    }),
+  ],
 });

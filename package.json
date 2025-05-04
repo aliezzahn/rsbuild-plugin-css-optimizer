@@ -1,7 +1,7 @@
 {
-  "name": "rsbuild-plugin-example",
-  "version": "0.0.0",
-  "repository": "https://github.com/rspack-contrib/rsbuild-plugin-template",
+  "name": "rsbuild-plugin-css-optimizer",
+  "version": "0.0.1",
+  "repository": "https://github.com/aliezzahn/rsbuild-plugin-css-optimizer",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -14,7 +14,9 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rslib build",
     "dev": "rslib build --watch",
@@ -26,6 +28,10 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npm run lint:write"
+  },
+  "dependencies": {
+    "css-minimizer-webpack-plugin": "5.0.1",
+    "reduce-configs": "^1.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
