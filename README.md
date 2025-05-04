@@ -11,6 +11,7 @@ An Rsbuild plugin to customize CSS minification, allowing you to choose between 
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
   <a href="https://npmcharts.com/compare/rsbuild-plugin-css-optimizer?minimal=true"><img src="https://img.shields.io/npm/dm/rsbuild-plugin-css-optimizer.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="downloads" /></a>
 </p>
+
 ## Features
 
 - **Flexible Minifier Choice**: Switch between `cssnano` for extensive optimizations or `Lightning CSS` for 5-10x faster minification.
